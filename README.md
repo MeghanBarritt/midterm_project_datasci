@@ -1,4 +1,5 @@
 # Data Science Midterm Project
+> Meghan Barritt | Tashrif Mahmud
 
 ## Project/Goals
 

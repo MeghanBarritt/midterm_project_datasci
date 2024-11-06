@@ -1,6 +1,7 @@
+import os,json
+import pandas as pd
+
 def get_data(filepath):
-    import os,json
-    import pandas as pd
 
     all_tags = []
     all_status = []
@@ -179,7 +180,6 @@ def get_data(filepath):
 
 
 def extract_tags(df):
-    import pandas as pd
     tags = df['tags'].values
     tags_dicts = [dict(zip(x,[1]*len(x))) if x is not None else {} for x in tags]
     df_tags = pd.json_normalize(tags_dicts)

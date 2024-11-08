@@ -56,14 +56,14 @@ We will use a large amount of housing data which can be found in the [data](http
 > Mean Absolute Error (MAE): 240273.5446929714
 > R-squared (R²): -0.019830832078835847
 > Adjusted R-squared: -0.17831805598297934
-
+>
 > Random Forest Metrics:
 > Mean Squared Error (MSE): 118289368284.31741
 > Root Mean Squared Error (RMSE): 343932.21466492116
 > Mean Absolute Error (MAE): 132034.9503377065
 > R-squared (R²): 0.5996749127979519
 > Adjusted R-squared: 0.5374622303273633
-
+>
 > XGBoost Metrics:
 > Mean Squared Error (MSE): 152373904869.29163
 > Root Mean Squared Error (RMSE): 390351.0021369122

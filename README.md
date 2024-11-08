@@ -78,7 +78,9 @@ We will use a large amount of housing data which can be found in the [data](http
 - Support Vector Machine performs poorly, with high errors and very low predictive accuracy, making it unsuitable for this task. 
 
 ## Challenges 
-- writing the import funtions was tricky; I (MB) had some issues getting the iterator to skip over None values rather than breaking, and then with the fact that the functions in the .py file needed to import modules internally. 
+- Writing the import functions was tricky, particularly with the iterator skipping `None` values and ensuring internal module imports in the `.py` file.
+- The model was receiving a mix of NumPy and Pandas objects, so we passed it two NumPy arrays. We identified that `NaNs` in the test data were caused by encoding the average sale price per city.
+- Data cleaning took a lot more time, as there were a huge chunk of missing and duplicate date mixed in.
 
 ## Future Goals
 (what would you do if you had more time?)

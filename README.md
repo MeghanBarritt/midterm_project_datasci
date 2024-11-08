@@ -71,6 +71,11 @@ We will use a large amount of housing data which can be found in the [data](http
 > R-squared (R²): 0.48432308297141446
 > Adjusted R-squared: 0.4041841026223775
 > ```
+- Random Forest performs the strongest with the lowest error and highest accuracy, explaining 60% of price variability. Cross-validated RMSE is around $237,415 ± $34,756, making it the most reliable choice.
+
+- Linear Regression & XGBoost both show moderate accuracy, explaining about 50% of the variability with higher error rates than Random Forest. Cross-validated RMSEs are similar, around $252,473 for Linear Regression and $253,431 for XGBoost.
+
+- Support Vector Machine performs poorly, with high errors and very low predictive accuracy, making it unsuitable for this task. 
 
 ## Challenges 
 - writing the import funtions was tricky; I (MB) had some issues getting the iterator to skip over None values rather than breaking, and then with the fact that the functions in the .py file needed to import modules internally. 

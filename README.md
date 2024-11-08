@@ -6,10 +6,23 @@
 ## Process
 ### Importing and compiling data from .json files
 - wrote one funcition to iterate through the data folder and extract information into a dataframe, and another to expand the tags list into columns, with partial One-Hot encoding applied, using list comprehension. 
+- initial testing of functions done on two .jsons in a separate folder to ensure the expected output was being produced
 
-### (your step 2)
-- (details)
-### (your step 2)
+### Column thinning, data cleaning
+- dropped duplicated data
+- removed columns that were completely empty, all contained the same value, or where almost completely empty. 
+- extracted list of keys to identify redundant columns that could be merged into a single feature, such as redundant tags for garage spaces and bathrooms, as well as features like 'views' or nearby sporting facilities, which, while potentially interesting, are difficult to group and quantify, and were not high priority to include. It was decided that these features would be dropped for time consideration.
+- merged redundant columns where appropriate, dropped others as decided
+- cleaned up values for 'property type' in new column and then applies OneHotEncoding to those categories
+- ran scatter plots, discovered some huge outliers that were having an outsized impact on the distribution; removed them
+- imputed some missing values after train/test split: year built, lot sqft, sqft
+
+### Model building
+
+### Hyperparameter tuning
+
+
+
 
 ## Results
 (fill in how your model performed)

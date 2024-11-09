@@ -36,7 +36,7 @@ We will use a large amount of housing data which can be found in the [data](http
 - We also go over the some feature selection methods to find the best features that can determine Housing Prices.
 
 ### Hyperparameter tuning
-- The framework of this process can be viewed in [3 - tuning_pipeline.ipynb]()
+- The framework of this process can be viewed in [3 - tuning_pipeline.ipynb](https://github.com/MeghanBarritt/midterm_project_housing_prices/blob/main/notebooks/3%20-%20tuning_pipeline.ipynb)
 - Started off by examining the documentation to see what parameters could be tuned for each model.
 - Initiated models with fixed parameters such as random_state already in place
 - Created parameter dictionaries to use with the GridSearch function during tuning.
@@ -54,6 +54,8 @@ We will use a large amount of housing data which can be found in the [data](http
 -  Writing the import functions was tricky, particularly with the iterator skipping `None` values and ensuring internal module imports in the `.py` file.
 - The model was receiving a mix of NumPy and Pandas objects, so we passed it two NumPy arrays. We identified that `NaNs` in the test data were caused by encoding the average sale price per city.
 - Data cleaning took a lot more time, as there were a huge chunk of missing and duplicate date mixed in.
+- Hyperparameter tuning for XGBoost in particular was a challenge, as entering more than a few values at a time caused a huge increase in calculation time, which was not ideal when there was a large chance the parameters would need futher tuning.
 
 ## Future Goals
-(what would you do if you had more time?)
+- Run the models again with the feature combinations selected in the stretch goals 'Feature Selection' area and then tune them to see how accurate a model could be achieved, and if the model that was most accurate would change.
+- Build a pipeline for the cleaning process.
